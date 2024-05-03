@@ -1,0 +1,291 @@
+//----------------------------------------------------------------------------------------------------------------------------------------//
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ man man
+NAME
+       man - an interface to the system reference manuals
+
+SYNOPSIS
+       man [man options] [[section] page ...] ...
+       man -k [apropos options] regexp ...
+       man -K [man options] [section] term ...
+       man -f [whatis options] page ...
+       man -l [man options] file ...
+       man -w|-W [man options] page ...
+
+DESCRIPTION
+       man  is  the  system's  manual pager.  Each page argument given to man is normally the name of a program, utility or function.  The
+       manual page associated with each of these arguments is then found and displayed.  A section, if provided, will direct man  to  look
+       only in that section of the manual.  The default action is to search in all of the available sections following a pre-defined order
+       (see DEFAULTS), and to show only the first page found, even if page exists in several sections.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ uname
+Linux
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ pwd
+/home/sunbeam/Desktop
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ hostname
+sunbeam-Lenovo-ideapad-330-15IKB
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ date
+Friday 03 May 2024 03:39:29 PM IST
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cal
+      May 2024        
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30 31     
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                code_by_mam  hello.txt   LabExam      MCPI_Assignments  Preparatory_assign     self-practice
+arduino-ide_2.3.2_Linux_64bit  git_data     IOT_assign  LabExam.zip  mycode            self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ dir
+All-Assignments		       code_by_mam  hello.txt	LabExam      MCPI_Assignments  Preparatory_assign     self-practice
+arduino-ide_2.3.2_Linux_64bit  git_data     IOT_assign	LabExam.zip  mycode	       self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cat hello.txt
+Hello, I am Student at Sunbeam Pune
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cat >>hello.txt
+CDAC is a well-known institute for PGD.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cp hello.txt demo.txt
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cat demo.txt
+Hello, I am Student at Sunbeam Pune
+CDAC is a well-known institute for PGD.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ mkdir demo
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cp -r demo mycode
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ ls
+mycode
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ mv hello.txt bye.txt
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  code_by_mam  demo.txt  IOT_assign  LabExam.zip       mycode              self_jupyter_practice
+arduino-ide_2.3.2_Linux_64bit  bye.txt      demo         git_data  LabExam     MCPI_Assignments  Preparatory_assign  self-practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ mv bye.txt demo
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cd demo
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ ls
+bye.txt  mycode
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ tac bye.txt
+CDAC is a well-known institute for PGD.
+Hello, I am Student at Sunbeam Pune
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ rev bye.txt
+enuP maebnuS ta tnedutS ma I ,olleH
+.DGP rof etutitsni nwonk-llew a si CADC
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ wc bye.txt
+ 2 14 76 bye.txt
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  demo
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ cd Desktop/demo/
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop/demo$ 
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  git_data    LabExam      MCPI_Assignments  Preparatory_assign     self-practice
+arduino-ide_2.3.2_Linux_64bit  code_by_mam  IOT_assign  LabExam.zip  mycode            self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ rm file1.txt 
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  git_data    LabExam      MCPI_Assignments  Preparatory_assign     self-practice
+arduino-ide_2.3.2_Linux_64bit  code_by_mam  IOT_assign  LabExam.zip  mycode            self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ rmdir demo
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  git_data    LabExam      MCPI_Assignments  Preparatory_assign     self-practice
+arduino-ide_2.3.2_Linux_64bit  code_by_mam  IOT_assign  LabExam.zip  mycode            self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ touch new
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ ls
+All-Assignments                Assign1.txt  git_data    LabExam      MCPI_Assignments  new                 self_jupyter_practice
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cat new
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute
+All tecahers are best here.
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ sort new
+All tecahers are best here.
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ cat new.txt
+Hello, I am student at sunbeam!
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute.
+Sunbeam is well-Known Institute.
+All tecahers are best here.
+All tecahers are best here.
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ uniq new.txt
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute.
+All tecahers are best here.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ head -3 new.txt
+Hello, I am student at sunbeam!
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ head -4 new.txt
+Hello, I am student at sunbeam!
+Hello, I am student at sunbeam!
+Sunbeam is well-Known Institute.
+Sunbeam is well-Known Institute.
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$ factor 12
+12: 2 2 3
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ alias CD="cd Desktop"
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ CD
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~/Desktop$
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ unalias CD
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ CD
+CD: command not found
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ echo *
+Arduino Desktop Documents Downloads google-chrome-stable_current_amd64.deb home Important links LabExamC LabExamC.zip Music Pictures Public snap Softwares STM32Cube STM32CubeIDE Templates Untitled.ipynb Videos vim
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ ps
+    PID TTY          TIME CMD
+  39450 pts/0    00:00:00 bash
+  41547 pts/0    00:00:00 ps
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ ps -ef
+www-data   42516   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42517   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42518   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42519   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42520   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42521   42512  0 17:18 ?        00:00:00 nginx: worker process
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ sudo kill -9 42517
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ ps -ef
+www-data   42516   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42518   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42519   42512  0 17:18 ?        00:00:00 nginx: worker process
+www-data   42520   42512  0 17:18 ?        00:00:00 nginx: worker process
+
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+sunbeam@sunbeam-Lenovo-ideapad-330-15IKB:~$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/sunbeam-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1623,unix/sunbeam-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1623
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+PWD=/home/sunbeam
+LOGNAME=sunbeam
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=wayland
+SYSTEMD_EXEC_PID=1662
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.DKE7M2
+HOME=/home/sunbeam
+USERNAME=sunbeam
+IM_CONFIG_PHASE=1
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+WAYLAND_DISPLAY=wayland-0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/facfec03_8c99_4d80_bfee_e76a56295535
+GNOME_SETUP_DISPLAY=:1
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=sunbeam
+GNOME_TERMINAL_SERVICE=:1.1022
+DISPLAY=:0
+SHLVL=1
+QT_IM_MODULE=ibus
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin:/home/sunbeam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+OLDPWD=/home/sunbeam/Desktop
+_=/usr/bin/env
+//----------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
